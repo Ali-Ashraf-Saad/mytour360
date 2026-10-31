@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>جولة 360°</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="view"></div>
+
+<div id="top">
+  <div>
+    <div class="brand">DarView · دار فيو</div>
+    <div id="title"></div>
+    <div id="count"></div>
+  </div>
+  <button id="editToggle" type="button">✏️ وضع المحرر</button>
+</div>
+
+<canvas id="radar" width="120" height="120"></canvas>
+<div id="tools">
+  <button id="btnProp" type="button" title="بيانات العقار" hidden>🏠</button>
+  <button id="btnTour" type="button" title="جولة تلقائية (Space)">▶</button>
+  <button id="btnShare" type="button" title="نسخ رابط المشهد">🔗</button>
+  <button id="btnGyro" type="button" title="التجوّل بحركة الهاتف">🧭</button>
+  <button id="btnFs" type="button" title="ملء الشاشة (F)">⛶</button>
+</div>
+<div id="pop" hidden><button id="popC" type="button" class="x" title="إغلاق">✕</button><b id="popT"></b><p id="popX"></p></div>
+<div id="prop" hidden>
+  <button id="propC" type="button" class="x" title="إغلاق">✕</button>
+  <b id="propT"></b><div id="propP"></div><div id="propL"></div>
+  <div class="acts"><a id="propWa" target="_blank" rel="noopener">واتساب</a><a id="propTel">اتصال</a></div>
+</div>
+<div id="toast" hidden></div>
+<div id="hint">اسحب للتجوّل · عجلة الماوس أو القرص بإصبعين للتقريب · اضغط على السهم للانتقال</div>
+<div id="bottom"></div>
+
+<aside id="panel" hidden>
+  <div class="ph">
+    <div class="phead"><strong>وضع المحرر</strong><button id="btnClose" type="button" class="x" title="خروج (Esc)">✕ خروج</button></div>
+    <span class="sub">اسحب السهم لتحريكه، أو اختره ثم انقر مرتين على المكان الجديد</span>
+  </div>
+  <div id="panelBody"></div>
+  <div class="pf">
+    <div id="status" class="status"></div>
+    <button id="btnSave" type="button" class="primary">💾 حفظ في الموقع</button>
+    <button id="btnDownload" type="button">⬇ نسخة config.js</button>
+    <button id="btnCopy" type="button">📋 نسخ</button>
+    <button id="btnReset" type="button" class="danger">↺ تراجع</button>
+  </div>
+</aside>
+
+<div id="fade"></div>
+<div id="loader">جارٍ تحميل الصور…</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+{
+    "scenes": [
+        {
+            "name": "الصالة · من جهة التلفزيون",
+            "image": "images\/1.jpg",
+            "arrive": 95.4,
+            "hotspots": [
+                {
+                    "lon": 58.3,
+                    "lat": -31.2,
+                    "label": "إلى الجهة الأخرى",
+                    "to": 1
+                },
+                {
+                    "lon": 211.7,
+                    "lat": -5.9,
+                    "label": "باب",
+                    "type": "info",
+                    "text": "باب جميل ذو خلفية رائعة"
+                }
+            ]
+        },
+        {
+            "name": "الصالة",
+            "image": "images\/2.jpg",
+            "arrive": 38.4,
+            "hotspots": [
+                {
+                    "lon": 8.1,
+                    "lat": -39.2,
+                    "label": "العودة",
+                    "to": 0
+                },
+                {
+                    "lon": 150.2,
+                    "lat": -5.9,
+                    "label": "مروحة",
+                    "type": "info",
+                    "text": "ياعم مروحة عادي"
+                },
+                {
+                    "lon": 183.3,
+                    "lat": 1,
+                    "label": "مشهد تخيالي",
+                    "to": 2
+                }
+            ]
+        },
+        {
+            "name": "مشهد 3",
+            "image": "images\/3.jpg",
+            "arrive": 180,
+            "hotspots": [
+                {
+                    "lon": 70.6,
+                    "lat": -1.7,
+                    "label": "رجوع",
+                    "to": 1
+                },
+                {
+                    "lon": 230.3,
+                    "lat": -15.2,
+                    "label": "الطاولة",
+                    "type": "info",
+                    "text": "المعلومة هنا"
+                },
+                {
+                    "lon": 296.6,
+                    "lat": -1.4,
+                    "label": "إلى مشهد 4",
+                    "to": 3
+                }
+            ]
+        },
+        {
+            "name": "مشهد 4",
+            "image": "images\/scene-20261023-023232-317f85.jpg",
+            "arrive": 180,
+            "hotspots": [
+                {
+                    "lon": 182.3,
+                    "lat": -21.3,
+                    "label": "رجوع",
+                    "to": 2
+                }
+            ]
+        }
+    ],
+    "property": {
+        "title": "العقار الجبار",
+        "price": "السعر نار",
+        "location": "الموقع محتار",
+        "phone": "0111111"
+    },
+    "removed": [
+        "images\/scene-20261023-023135-fcf7ae.jpg"
+    ]
+}
